@@ -15,8 +15,8 @@ function book() {
     var strText8 = document.getElementById("ser").value;
    
 	var Clink="https://droptaxiindia.com";
-	var CPh="912345";
-	var Cname="droptaxiindia";
+	var CPh="99409 80956";
+	var Cname="Drop Taxi India";
 	//calcRoute()
     if((strText7=="Sedan") && (strText8=="One-Way"))
     {rate=sedano;}
@@ -40,9 +40,9 @@ if(strText==""||strText1==""||strText2==""||strText3==""||strText4==""||strText6
         }else
         {
             const request = new XMLHttpRequest();
-	//	const url = 'https://api.telegram.org/bot1277549383:AAGnKv4XGhOAG08Qg7ewe1mLVyXFiISPJ8o/sendMessage?chat_id=-18&text='+result;
-  //      request.open("post", url);
-   //     request.send();
+		const url = 'https://api.telegram.org/bot1721938726:AAEqc3VUsUo88GIeAcrWvhRhFVvpmU1aJSE/sendMessage?chat_id=-518646833&text=' + result;
+     request.open("post", url);
+     request.send();
 		console.log("Sent Telegram successfully");
         fetch("https://www.fast2sms.com/dev/bulk?authorization=tXGFnAr4LNYZM8Q9jwPVHxWdvs6eahl2qk5of7SzpRbOUEumITTnoiOFHqdCLhzJPgaxer2mpZ8UNEyf&sender_id=FSTSMS&message="+Clink+"/%0AContact No: "+CPh+"%0AHello "+strText+",%0AThank you for Booking with "+Cname+".Your "+strText2+" Booking has been Confirmed on "+strText4+".&language=english&route=p&numbers="+strText1)
 			.then(response=>{
