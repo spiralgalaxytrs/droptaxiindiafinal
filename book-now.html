@@ -148,71 +148,136 @@
 				
 				
               
-                    <div id="ma" style="display: none;">  
-                      <br><br>                              
+                                       <div id="ma" style="display: none;">  
+                                              
                                        
                       <b> <div id="output" class="result-table"></div></b>
                       <div class="container-map" id="google-map"></div> 
-      <br><br>
-      <b>   
-                    <article class="pt-classic pt-classic_preferred wow scaleIn">
-
-      <div class="col-md-6" required>
-                      <div class="service-thumbnail d-flex flex-fill">
-                      <img src="https://a1droptaxi.com/img/sedan.png" alt="#" style="height: 100px; width: 100px; ">
-                      <div id="output1" class="meta-item">
-                  </div>
-              </div>
-          </div>
-                  </article>  <br>
-                                      <article class="pt-classic pt-classic_preferred wow scaleIn">
-
-                       <div class="col-md-6">
-                      <div class="service-thumbnail d-flex flex-fill">
-                           <img src="https://a1droptaxi.com/img/suv.png" alt="#" style="height: 100px; width: 100px; ">
-                      <div id="output2" class="meta-item">
-                  </div>
-              </div>
-          </div>
-      </article><br>
-                                          <article class="pt-classic pt-classic_preferred wow scaleIn">
-
       
-                      <div class="col-md-6">
-                      <div class="service-thumbnail d-flex flex-fill">
-                      <img src="https://a1droptaxi.com/img/van.png" alt="#" style="height: 100px; width: 100px; ">
-                      <div id="output3" class="meta-item">
-                  </div>
-              </div>
-          </div>
-          </article>
-          <div class="col-md-6">
-            <div class="form-wrap">
-              <label>Service Type</label>
-              <select id="ser" name="ser" class="form-control">
-                <option value="One-Way">One-Way</option>
-                <option value="Round">Round</option>
+      <b>  
+	      
+	      
+
+	      
+	      
+	      
+	      
+	      
+        <div class="form-wrap">
+          <label>Service Type</label>
+          <select id="ser" name="ser" class="form-control">
+            <option value="One-Way">One-Way</option>
+            <option value="Round">Round</option>
+            
+          </select>
+          <label class="form-label" for="Service Type"></label>
+        </div>
+      
+      
+        <div class="form-wrap">
+          <label>Car Type</label>
+          <select id="cars" name="cars" class="form-control">
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Traveller">Traveller</option>
+          </select>
+          <label class="form-label" for="Car Type"></label>
+        </div>
+      
+      <button class="button button-block button-secondary mb-2" onclick="Car()">Next</button>
+          
+                    <article class="pt-classic pt-classic_preferred  wow scaleIn p-2 d-flex algin-items-center mt-3">
+
+                            <div class="card-img col-4">
+                              <img  height="100" width="100" src="https://a1droptaxi.com/img/suv.png" alt="">
+                              <h1 style="color:black;font-size:16px;text-transform: capitalize; text-align: center; " >Dispatcher</h1>
+                              <div class="card-details col-4  d-flex flex-column">
+           
+                                <div class="d-flex flex-row card-span-size" id="output1" style="color: #2a4696;">
+                                  <i  style="color: #2a4696;"class="fas fa-road mt-2"><span>1000</span></i> &nbsp;
+                                  <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                                  <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                                  
+                            
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-img col-4">
+                              <img  height="100" width="100" src="https://a1droptaxi.com/img/suv.png" alt="">
+                              <h1 style="color:black;font-size:16px;text-transform: capitalize; text-align: center; " >Dispatcher</h1>
+                              <div class="card-details col-4  d-flex flex-column">
+           
+                                <div class="d-flex flex-row card-span-size" id="output2" style="color: #2a4696;">
+                                  <i style="color: #2a4696;"class="fas fa-road mt-2"><span>1000</span></i> &nbsp;
+                                  <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                                  <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                                  
+                            
+                                </div>
+                              </div>
+                            </div>
+                            
+                      
+               
+                  </article>  <br>
+                                     
+                    <article class="pt-classic pt-classic_preferred  wow scaleIn p-2 d-flex algin-items-center mt-3">
+
+                      <div class="card-img col-4">
+                        <img  height="100" width="100" src="https://a1droptaxi.com/img/suv.png" alt="">
+                        <h1 style="color:black;font-size:16px;text-transform: capitalize;text-align: center;  " >Dispatcher</h1>
+                        <div class="card-details col-4  d-flex flex-column">
+     
+                          <div class="d-flex flex-row card-span-size" id="output3" style="color: #2a4696;">
+                            <i style="color: #2a4696;"class="fas fa-road mt-2"><span>1000</span></i> &nbsp;
+                            <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                            <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                            
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-img col-4">
+                        <img  height="100" width="100" src="https://a1droptaxi.com/img/suv.png" alt="">
+                        <h1 style="color:black;font-size:16px;text-transform: capitalize;text-align: center;  " >Dispatcher</h1>
+                        <div class="card-details col-4  d-flex flex-column">
+     
+                          <div class="d-flex flex-row card-span-size" id="output4" style="color: #2a4696;">
+                            <i style="color: #2a4696;"class="fas fa-road mt-2"><span>1000</span></i> &nbsp;
+                            <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                            <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                            
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
                 
-              </select>
-              <label class="form-label" for="Service Type"></label>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-wrap">
-              <label>Car Type</label>
-              <select id="cars" name="cars" class="form-control">
-                <option value="Sedan">Sedan</option>
-                <option value="SUV">SUV</option>
-                <option value="Traveller">Traveller</option>
-              </select>
-              <label class="form-label" for="Car Type"></label>
-            </div>
-          </div>
-          <button class="button button-block button-secondary" onclick="Car()">Next</button>
-              </div> 
-                  
+         
+            </article> <br>
+            <article class="pt-classic pt-classic_preferred  wow scaleIn p-2 d-flex algin-items-center mt-3">
+
+                    <div class="card-img col-4">
+                      <img  height="100" width="100" src="https://a1droptaxi.com/img/suv.png" alt="">
+                      <h1 style="color:black;font-size:16px;text-transform: capitalize; text-align: center; " >Dispatcher</h1>
+                      <div class="card-details col-4  d-flex flex-column" id="output5" style="color: #2a4696;">
+   
+                        <div class="d-flex flex-row card-span-size">
+                          <i style="color: #2a4696;"class="fas fa-road mt-2"><span>1000</span></i> &nbsp;
+                          <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                          <i style="color: #2a4696;"class="fas fa-rupee-sign mt-2"><span>1000</span></i> &nbsp;
+                          
+                    
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
               
-              
+       
+          </article> 
+        
+          </div> 
               
               
               
