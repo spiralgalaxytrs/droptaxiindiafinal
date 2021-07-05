@@ -27,13 +27,13 @@ function book() {
     else if((strText7=="SUV") && (strText8=="Round"))
     {rate=suvr;}
     else if((strText7=="PSedan") && (strText8=="One-Way"))
-    {rate=sedano;}
+    {rate=psedano;}
     else if((strText7=="PSedan") && (strText8="Round"))
-    {rate=sedanr;}
+    {rate=psedanr;}
     else if((strText7=="PSUV") && (strText8=="One-Way"))
-    {rate=suvo;}
+    {rate=psuvo;}
     else if((strText7=="PSUV") && (strText8=="Round"))
-    {rate=suvr;}
+    {rate=psuvr;}
     else if(strText7=="Traveller")
     {rate=traveller;}
 console.log("read successful");
